@@ -1,17 +1,26 @@
 # The `ionice` command
 
-This program sets/gets I/O scheduling class and priority for the program If none argument is given , `ionice` will query the current I/O scheduling class and priority for that process
+The `ionice` command is used to set or get process I/O scheduling class and priority.
+
+If no arguments are given , `ionice` will query the current I/O scheduling class and priority for that process.
 
 ## Usage
 
- `ionice [options] -p <pid>...`
+ ```
+ionice [options] -p <pid>
+```
  
-` ionice [options] -P <pgid>...`
+```
+ionice [options] -P <pgid>
+```
 
-` ionice [options] -u <uid>...`
+```
+ionice [options] -u <uid>
+```
 
-` ionice [options] <command>`
-
+```
+ionice [options] <command>
+```
 
 ## A process can be of three scheduling classes:
 - ### Idle
